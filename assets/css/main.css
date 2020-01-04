@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans|Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Caveat&display=swap");
+
+:root {
+  --nav-background-color: #cf581d;
+  --container-bg-color: #cf581d;
+
+  --white-color: #ffffff;
+  --black-color: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", "Fira Sans", sans-serif;
+}
+
+section {
+  margin: 1% 3% 3%;
+}
+
+a {
+  color: var(--black-color);
+  text-decoration: none;
+}
+
+footer {
+  width: 90%;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+/** Navigation Section */
+.navbar {
+  background-color: var(--nav-background-color);
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 0.1em solid rgba(199, 63, 10, 0.9);
+  width: 100%;
+}
+
+.navbar a {
+  color: rgb(255, 255, 255);
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.5em;
+  color: var(--nav-background-color);
+}
+
+.navbar a.active {
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.5em;
+  color: var(--nav-background-color);
+  position: relative;
+}
+
+.navbar a.active::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-top-color: var(--white-color);
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  margin-left: -8px;
+}
+
+/** Main Section */
+.container {
+  background-color: var(--container-bg-color);
+  /* background-image: linear-gradient(
+    to left,
+    rgba(207, 88, 29, 0.7),
+    rgba(207, 88, 29, 1)
+  ); */
+}
+
+.profileSection {
+  display: flex;
+  justify-content: flex-start;
+  overflow: auto;
+}
+
+.profileSection div {
+  width: 50%;
+}
+
+.profileSection .profile {
+  padding: 2em 0;
+}
+
+.profileSection .profile img {
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  width: 15rem;
+  height: 15rem;
+}
+
+.profileSection .quote {
+  color: var(--white-color);
+  font: italic bold 50px Sacramento, cursive;
+  padding-top: 2.5rem;
+}
+
+.profileSection .quote h1 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 1rem 0;
+}
+
+.profileSection .quote h1 > span {
+  color: #dae063;
+  font-family: "Roboto", "Fira Sans", sans-serif;
+  font-style: normal;
+  font-size: 3.2rem;
+  padding-left: 0.35rem;
+}
+
+.profileSection .quote h2 {
+  text-align: justify;
+  font-family: "Caveat", cursive;
+  font-size: 2rem;
+  padding: 2rem 0;
+}
+
+/* Section */
+section h1 {
+  font: italic bold 2.5em Sacramento, cursive;
+  text-decoration: underline dotted;
+}
+
+section h2 {
+  font-weight: lighter;
+  padding: 0.5rem 0;
+}
+
+section h2 + span {
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+}
+
+section h4 {
+  font-weight: normal;
+  font-family: "Caveat", cursive;
+  font-size: 1.25rem;
+  padding: 0.25rem 0;
+}
+
+section ul {
+  padding-left: 2rem;
+}
+
+section ul > li {
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
+section p {
+  text-align: justify;
+  text-indent: 5%;
+}
+
+/* Tech Stack Section */
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 1rem;
+}
+
+.card {
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  height: 18rem;
+  position: relative;
+}
+
+.card:hover {
+  box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.3);
+}
+
+.card > h3 {
+  border-bottom: 0.05rem solid rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: monospace;
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  position: absolute;
+  padding: 1rem 0.5rem;
+  overflow: hidden;
+}
+
+.img-container > .tech-img {
+  width: 5rem;
+  height: 5rem;
+  padding: 0.5rem 0.25rem 0.25rem;
+}
+
+/* About Me Section */
+.aboutMe-container > p {
+  font-family: monospace;
+  font-size: 1.3rem;
+  padding: 0.5rem 0;
+  padding-right: 0.5rem;
+}
+
+/* Contact Section */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact {
+  margin: 0 0.75rem;
+  padding: 0.5rem 1rem;
+}
+
+.contact a > img {
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem;
+  vertical-align: middle;
+}
+
+/* If browser window is 768px or higher */
+@media only screen and (min-width: 768px) {
+  main {
+    margin-bottom: 1rem;
+    padding-top: 3rem;
+  }
+
+  section h2 {
+    display: inline-block;
+  }
+
+  section h2 + span {
+    padding-left: 15%;
+  }
+
+  .navbar {
+    position: fixed;
+    z-index: 1;
+  }
+
+  .profileSection {
+    padding-bottom: 2rem;
+  }
+  .profileSection .quote {
+    padding-right: 5%;
+  }
+
+  .card {
+    width: 33.3%;
+    padding: 0 0.5rem;
+    margin: 0 0.5rem;
+  }
+
+  .contact-container {
+    justify-content: flex-start;
+  }
+}
+
+/* If browser window is 768px or smaller */
+@media only screen and (max-width: 768px) {
+  section {
+    margin: 3% 5%;
+  }
+
+  section p {
+    padding-top: 0.5rem;
+  }
+
+  .container {
+    background-color: var(--container-bg-color);
+  }
+
+  .profileSection {
+    flex-direction: column;
+  }
+
+  .profileSection {
+    padding: 2em 2em;
+  }
+
+  .profileSection div {
+    width: 100%;
+  }
+
+  .profileSection .profile {
+    padding: 0 0;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    margin: 0.25rem 0.25rem;
+  }
+
+  .contact-container {
+    flex-direction: row;
+  }
+}
