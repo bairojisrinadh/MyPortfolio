@@ -20,6 +20,25 @@
       <a href="#aboutMe" class="navlink">About Me</a>
       <a href="#contact" class="navlink">Contact</a>
     </nav>
+    <nav class="menu-wrap">
+      <input type="checkbox" class="toggler" id="toggleBox" />
+      <div class="hamburger">
+        <div></div>
+      </div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul id="menulist">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#techStack">Tech Stack</a></li>
+              <li><a href="#aboutMe">About Me</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
     <main id="home">
       <div class="container">
         <div class="profileSection">
@@ -40,6 +59,9 @@
         </div>
       </div>
     </main>
+    <div>
+      <button onclick="scrollToTop();" id="topBtn" class="topBtn"><span>Go To</span>Top</span></button>
+    </div>
     <section>
       <div id="projects">
         <h1>Projects I Worked On</h1>
@@ -140,106 +162,160 @@
           <div class="card">
             <h3>Front End Stack</h3>
             <div class="img-container">
+              <div>
+                <span>Angular 2+</span>
               <img
                 src="assets/images/skills/angular.svg"
                 alt="angular"
                 class="tech-img"
               />
+              </div>
+              <div>
+                <span>HTML 5</span>
               <img
                 src="assets/images/skills/html5.png"
                 alt="html5"
                 class="tech-img"
               />
+              </div>
+              <div>
+                <span>CSS 3</span>
               <img
                 src="assets/images/skills/css3.png"
                 alt="css3"
                 class="tech-img"
               />
+              </div>
+              <div>
+                <span>Java Script</span>
               <img
                 src="assets/images/skills/javascript.png"
                 alt="javascript"
                 class="tech-img"
               />
+              </div>
+              <div>
+                <span>Bootstrap</span>
               <img
                 src="assets/images/skills/bootstrap.png"
                 alt="bootstrap"
                 class="tech-img"
               />
+              </div>
+              <div>
+                <span>JQuery</span>
               <img
                 src="assets/images/skills/jquery.png"
                 alt="jquery"
                 class="tech-img"
               />
+              </div>
             </div>
           </div>
-          <div class="card">
+          <div class="card card-2">
             <h3>Back End Stack</h3>
             <div class="img-container">
+              <div>
+                <span>Java</span>
               <img
                 src="assets/images/skills/java.png"
                 alt="java"
                 class="tech-img"
               />
+              </div>
+              <div>
+                <span>Spring Boot</span>
               <img
                 src="assets/images/skills/springboot.png"
                 alt="springboot"
                 class="tech-img"
               />
+              </div>
+              <div>
+                <span>REST</span>
               <img
                 src="assets/images/skills/rest.png"
                 alt="rest api"
                 class="tech-img"
               />
+              </div>
+              <div>
+                <span>SQL</span>
               <img
                 src="assets/images/skills/sql.svg"
                 alt="sql"
                 class="tech-img"
               />
+              </div>
+              <div>
+                <span>Node JS</span>
               <img
                 src="assets/images/skills/node.png"
                 alt="node"
                 class="tech-img"
               />
+              </div>
+              <div>
+                <span>SOAP</span>
               <img
                 src="assets/images/skills/soap.png"
                 alt="soap"
                 class="tech-img"
               />
+              </div>
+              <div>
+                <span>XML</span>
               <img
                 src="assets/images/skills/xml.png"
                 alt="xml"
                 class="tech-img"
               />
+              </div>
+              <div>
+                <span>JSON</span>
               <img
                 src="assets/images/skills/json.png"
                 alt="json"
                 class="tech-img"
               />
+              </div>
             </div>
           </div>
           <div class="card">
             <h3>Infrastructure / Tools</h3>
             <div class="img-container">
+              <div>
+                <span>Git Bash</span>
               <img
                 src="assets/images/skills/gitbash.png"
                 alt="gitbash"
                 class="tech-img"
               />
+              </div>
+              <div>
+                <span>Jenkins</span>
               <img
                 src="assets/images/skills/jenkins.png"
                 alt="jenkins"
                 class="tech-img"
               />
+              </div>
+              <div>
+                <span>NPM</span>
               <img
                 src="assets/images/skills/npm.png"
                 alt="npm"
                 class="tech-img"
               />
+              </div>
+              <div>
+                <span>Docker</span>
               <img
                 src="assets/images/skills/docker.png"
                 alt="docker"
                 class="tech-img"
               />
+              </div>
             </div>
           </div>
         </div>
@@ -260,7 +336,7 @@
           </p>
           <p>
             In a nut shell, I use JAVA and its frameworks such as
-            Spring/SprigBoot to create REST web services and pass on the
+            Spring/SpringBoot to create REST web services and pass on the
             JSON/XML data to browsers leveraging Angular framework & JavaScript
             from UI side. Then, bundling all these entities seperately and
             deploying them onto a DOCKER container. Have a doubt, why am I not
@@ -287,7 +363,7 @@
               ><img
                 src="assets/images/contacts/linkedin.png"
                 alt="linkedin"
-              /><span>Srindh Biroji's Linkedin Profile</span>
+              /><span>Linkedin Profile</span>
             </a>
           </div>
           <div class="contact">
