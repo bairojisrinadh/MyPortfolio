@@ -410,6 +410,10 @@ section p {
   color: var(--black-color);
 }
 
+#fileName {
+  font-size: 1rem;
+}
+
 /* reset input */
 .form__field:required,
 .form__field:invalid {

@@ -64,3 +64,13 @@ function scrollToTop() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+// file upload
+let fileAttachment = document.getElementById("fileAttachment");
+let fileNameSpan = document.getElementById("fileName");
+fileAttachment.addEventListener("change", function() {
+  if (this.files.length > 0) {
+    let fileName = this.files[0].name;
+    console.log(fileName);
+  }
+});
