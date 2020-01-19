@@ -385,6 +385,31 @@ section p {
   font-weight: 700;
 }
 
+.inputFile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.inputFile + label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #9b9b9b;
+  display: inline-block;
+}
+
+.inputFile + label > i {
+  padding-right: 0.5rem;
+}
+
+.inputFile:focus + label,
+.inputFile + label:hover {
+  color: var(--black-color);
+}
+
 /* reset input */
 .form__field:required,
 .form__field:invalid {

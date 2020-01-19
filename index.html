@@ -11,6 +11,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="https://kit.fontawesome.com/95de538192.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <nav class="navbar" id="navId">
@@ -386,14 +387,15 @@
             <label for="email" class="form__label">Email</label>
           </div>
           <div class="form__group field">
-          <textarea name="reason" id="reason" cols="30" rows="10" class="form__field"></textarea>
-          <label for="reason" class="form__label">Reason to contact</label>
+            <textarea name="reason" id="reason" placeholder="Reason to contact" cols="30" rows="10" class="form__field"></textarea>
+            <label for="reason" class="form__label">Reason to contact</label>
           </div>
           <div class="form__group field">
-          <input type="file" name="fileAttachment" id="fileAttachment" ">
+            <input type="file" name="fileAttachment" id="fileAttachment" class="inputFile"/>
+            <label for="fileAttachment"><i class="fas fa-file-upload"></i>Choose file</label>
           </div>
           <div class="form__group field">
-          <input type="submit" class="btn btn-submit" value="Submit">
+            <input type="submit" class="btn btn-submit" value="Submit">
           </div>
         </form>
       </div>
