@@ -689,6 +689,26 @@ section p {
     padding: 0 0;
   }
 
+  .profileSection .profile img {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .profileSection .quote h1 {
+    text-align: start;
+    font-size: 2.5rem;
+    padding: 0.75rem 0;
+  }
+
+  .profileSection .quote h1 > span {
+    font-size: 2.75rem;
+    padding-left: 0.35rem;
+  }
+
+  .profileSection .quote h2 {
+    text-align: start;
+  }
+
   .card-container {
     flex-direction: column;
   }
