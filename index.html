@@ -291,9 +291,12 @@
         </div>
       </div>
     </div>
+    <div class="or">
+      (OR)
+    </div>
     <div class="form-container">
       <h3 class="form-heading">Drop a note to me.</h3>
-      <form action="" class="form">
+      <form action="POST" class="form" data-netlify="true">
         <div class="form__group field">
           <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
           <label for="name" class="form__label">Name</label>
@@ -308,10 +311,13 @@
           <label for="reason" class="form__label">Reason to contact</label>
         </div>
         <div class="form__group field">
-          <input type="file" name="fileAttachment" id="fileAttachment" class="inputFile" />
-          <label for="fileAttachment"><i class="fas fa-file-upload"></i>Choose file</label>
+          <input type="file" name="fileAttachment" id="fileAttachment" class="inputFile" multiple/>
+          <label for="fileAttachment"><i class="fas fa-file-upload"></i>Upload file</label>
           <!-- below span will gets updated by JS function -->
-          <span id="fileName"></span>
+          <div id="fileName"></div>
+        </div>
+        <div class="form__group field">
+          <div data-netlify-recaptcha="true"></div>
         </div>
         <div class="form__group field">
           <input type="submit" class="btn btn-submit" value="Submit">
