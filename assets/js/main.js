@@ -5,7 +5,7 @@ var mainNavLinks = document.querySelectorAll("#navId a");
 var sections = document.querySelectorAll("section");
 
 for (let i = 0; i < navLinks.length; i++) {
-  navLinks[i].addEventListener("click", function() {
+  navLinks[i].addEventListener("click", function () {
     let activeLinks = document.getElementsByClassName("active");
     activeLinks[0].classList.remove("active");
     this.classList.add("active");
@@ -17,7 +17,7 @@ var toggleBox = document.getElementById("toggleBox");
 var topBtn = document.getElementById("topBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function(event) {
+window.onscroll = function (event) {
   scrollFunction();
 
   let fromTop = window.scrollY;
@@ -53,7 +53,7 @@ function handleMenuClick(event) {
   }
 }
 
-toggleBox.addEventListener("click", function() {
+toggleBox.addEventListener("click", function () {
   if (toggleBox.checked == true) {
     topBtn.classList.add("novisible");
   }
@@ -68,9 +68,17 @@ function scrollToTop() {
 // file upload
 let fileAttachment = document.getElementById("fileAttachment");
 let fileNameSpan = document.getElementById("fileName");
-fileAttachment.addEventListener("change", function() {
+fileAttachment.addEventListener("change", function () {
   if (this.files.length > 0) {
     let fileName = this.files[0].name;
-    console.log(fileName);
+    document.getElementById("fileName").innerHTML = `
+    <i class="fas fa-times pr-2" onclick="deleteAttachment()"></i>
+    ${fileName}`;
   }
 });
+
+function deleteAttachment() {
+  // remove files from fileAttachment
+  fileAttachment.files.length = 0;
+  fileNameSpan.style.display = 'none';
+}

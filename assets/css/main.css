@@ -40,6 +40,7 @@ footer {
   padding: 1rem;
   margin-bottom: 1.5rem;
 }
+
 /** Navigation Section */
 .navbar {
   background-color: var(--nav-background-color);
@@ -127,7 +128,7 @@ footer {
   padding: 1rem 0;
 }
 
-.profileSection .quote h1 > span {
+.profileSection .quote h1>span {
   color: #dae063;
   font-family: "Roboto", "Fira Sans", sans-serif;
   font-style: normal;
@@ -164,7 +165,7 @@ footer {
   transition: all 0.4s ease-out;
 }
 
-.topBtn > span {
+.topBtn>span {
   display: block;
   font-size: 0.5rem;
   padding: 0 0.25rem 0.35rem;
@@ -181,7 +182,7 @@ section h2 {
   padding: 0.5rem 0;
 }
 
-section h2 + span {
+section h2+span {
   font-weight: 700;
   font-size: 1rem;
   padding: 0.5rem 0;
@@ -198,7 +199,7 @@ section ul {
   padding-left: 2rem;
 }
 
-section ul > li {
+section ul>li {
   font-size: 0.9rem;
   text-align: justify;
 }
@@ -227,7 +228,7 @@ section p {
   box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.3);
 }
 
-.card > h3 {
+.card>h3 {
   border-bottom: 0.05rem solid rgba(0, 0, 0, 0.1);
   font-size: 1.5rem;
   font-weight: 500;
@@ -245,7 +246,7 @@ section p {
   overflow: hidden;
 }
 
-.img-container > div > .tech-img {
+.img-container>div>.tech-img {
   width: 5rem;
   height: 5rem;
   padding: 0.5rem 0.25rem 0.25rem;
@@ -253,7 +254,7 @@ section p {
   cursor: pointer;
 }
 
-.img-container > div > span {
+.img-container>div>span {
   position: relative;
   font-size: 0.75rem;
   background: var(--black-color);
@@ -269,7 +270,7 @@ section p {
   transition: opacity 0.6s;
 }
 
-.img-container > div > span:after {
+.img-container>div>span:after {
   content: "";
   width: 10px;
   height: 10px;
@@ -281,13 +282,13 @@ section p {
   transform: translateX(-50%) rotate(45deg);
 }
 
-.img-container > div:hover > span {
+.img-container>div:hover>span {
   display: block;
   opacity: 1;
 }
 
 /* About Me Section */
-.aboutMe-container > p {
+.aboutMe-container>p {
   font-family: monospace;
   font-size: 1.3rem;
   padding: 0.5rem 0;
@@ -305,7 +306,7 @@ section p {
   padding: 0.5rem 1rem;
 }
 
-.contact a > img {
+.contact a>img {
   width: 3rem;
   height: 3rem;
   padding: 0.5rem;
@@ -317,18 +318,18 @@ section p {
   margin-top: 1rem;
 }
 
-.form-container > .form-heading {
+.form-container>.form-heading {
   font-size: 1.5rem;
   font-weight: normal;
   padding: 0 0 0.5rem 2rem;
   text-decoration: underline;
 }
 
-.form-container > .form {
+.form-container>.form {
   padding: 0 0 1rem 2rem;
 }
 
-.form-container > .form .form__group {
+.form-container>.form .form__group {
   position: relative;
   padding: 15px 0 0;
   margin-top: 10px;
@@ -352,7 +353,7 @@ section p {
   color: transparent;
 }
 
-.form__field:placeholder-shown ~ .form__label {
+.form__field:placeholder-shown~.form__label {
   font-size: 1rem;
   cursor: text;
   top: 20px;
@@ -375,7 +376,7 @@ section p {
   border-image-slice: 1;
 }
 
-.form__field:focus ~ .form__label {
+.form__field:focus~.form__label {
   position: absolute;
   top: 0;
   display: block;
@@ -394,24 +395,37 @@ section p {
   z-index: -1;
 }
 
-.inputFile + label {
+.inputFile+label {
   font-size: 1rem;
   font-weight: 600;
   color: #9b9b9b;
   display: inline-block;
+  padding-right: 2rem;
 }
 
-.inputFile + label > i {
+.inputFile+label>i {
   padding-right: 0.5rem;
 }
 
-.inputFile:focus + label,
-.inputFile + label:hover {
+.inputFile:focus+label,
+.inputFile+label:hover {
   color: var(--black-color);
 }
 
 #fileName {
+  width: 100%;
+  padding: 0.75rem 0;
+  display: inline-block;
   font-size: 1rem;
+  font-weight: normal;
+}
+
+#fileName>i {
+  color: rgb(241, 47, 47);
+}
+
+.pr-2 {
+  padding-right: 0.75rem;
 }
 
 /* reset input */
@@ -431,7 +445,7 @@ section p {
     display: inline-block;
   }
 
-  section h2 + span {
+  section h2+span {
     padding-left: 15%;
   }
 
@@ -516,7 +530,7 @@ section p {
   }
 
   /* Hamburger Line */
-  .menu-wrap .hamburger > div {
+  .menu-wrap .hamburger>div {
     position: relative;
     width: 100%;
     height: 3px;
@@ -528,8 +542,8 @@ section p {
   }
 
   /* Top & Bottom Lines */
-  .menu-wrap .hamburger > div:before,
-  .menu-wrap .hamburger > div:after {
+  .menu-wrap .hamburger>div:before,
+  .menu-wrap .hamburger>div:after {
     content: "";
     position: absolute;
     z-index: 1;
@@ -540,17 +554,17 @@ section p {
   }
 
   /* Move Line down */
-  .menu-wrap .hamburger > div:after {
+  .menu-wrap .hamburger>div:after {
     top: 10px;
   }
 
-  .menu-wrap .toggler:checked + .hamburger > div {
+  .menu-wrap .toggler:checked+.hamburger>div {
     transform: rotate(135deg);
   }
 
   /* Turn Lines into X */
-  .menu-wrap .toggler:checked + .hamburger > div:before,
-  .menu-wrap .toggler:checked + .hamburger > div:after {
+  .menu-wrap .toggler:checked+.hamburger>div:before,
+  .menu-wrap .toggler:checked+.hamburger>div:after {
     top: 0;
     transform: rotate(90deg);
   }
@@ -568,25 +582,25 @@ section p {
     align-items: center;
   }
 
-  .menu-wrap .toggler:checked ~ .topBtn {
+  .menu-wrap .toggler:checked~.topBtn {
     visibility: hidden;
   }
 
-  .menu-wrap .toggler:checked ~ .menu {
+  .menu-wrap .toggler:checked~.menu {
     visibility: visible;
   }
 
-  .menu-wrap .toggler:checked ~ .menu > div {
+  .menu-wrap .toggler:checked~.menu>div {
     transform: scale(1);
     transition-duration: var(--menu-speed);
   }
 
-  .menu-wrap .toggler:checked ~ .menu > div > div {
+  .menu-wrap .toggler:checked~.menu>div>div {
     opacity: 1;
     transition: opacity 0.4s ease;
   }
 
-  .menu-wrap .menu > div {
+  .menu-wrap .menu>div {
     background: var(--overlay-color);
     width: 100vw;
     height: 100vh;
@@ -598,7 +612,7 @@ section p {
     transition: all 0.4s ease;
   }
 
-  .menu-wrap .menu > div > div {
+  .menu-wrap .menu>div>div {
     text-align: center;
     max-width: 90vw;
     max-height: 100vh;
@@ -606,14 +620,14 @@ section p {
     transition: opacity 0.4s ease;
   }
 
-  .menu-wrap .menu > div > div > ul > li {
+  .menu-wrap .menu>div>div>ul>li {
     list-style: none;
     color: #fff;
     font-size: 1.5rem;
     padding: 1rem;
   }
 
-  .menu-wrap .menu > div > div > ul > li > a {
+  .menu-wrap .menu>div>div>ul>li>a {
     color: inherit;
     text-decoration: none;
     transition: color 0.4s ease;
@@ -668,6 +682,7 @@ section p {
     opacity: 0.3;
     transform: translateY(-4rem);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
